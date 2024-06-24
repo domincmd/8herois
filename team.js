@@ -1,11 +1,11 @@
 const reserva1 = ["Domin", "Zagueiro", "placeholder.jpg", "Descrição do Domin"];
 const reserva2 = ["Thomas", "Zagueiro", "placeholder.jpg", "Descrição do Thomas"];
-const reserva3 = ["Joe", "Meio", "placeholder.jpg", "Descrição do Joe"];
+const reserva3 = ["Joe", "Meia", "placeholder.jpg", "Descrição do Joe"];
 const goleiro = ["Fred", "Goleiro", "placeholder.jpg", "Descrição do Fred"];
 const zagueiro1 = ["Thomas", "Zagueiro", "placeholder.jpg", "Descrição do Thomas"];
 const zagueiro2 = ["Joe", "Zagueiro", "placeholder.jpg", "Descrição do Joe"];
-const meio1 = ["Bertero", "Meio", "placeholder.jpg", "Descrição do Bertero"];
-const meio2 = ["Murilo", "Meio", "placeholder.jpg", "Descrição do Murilo"];
+const meio1 = ["Bertero", "Meia", "placeholder.jpg", "Descrição do Bertero"];
+const meio2 = ["Murilo", "Meia", "placeholder.jpg", "Descrição do Murilo"];
 const ala1 = ["Castro", "Ala", "placeholder.jpg", "Descrição do Castro"];
 const ala2 = ["Oti", "Ala", "placeholder.jpg", "Descrição do Oti"];
 const atacante = ["Baracat", "Atacante", "placeholder.jpg", "Descrição do Baracat"];

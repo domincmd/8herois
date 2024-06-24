@@ -101,7 +101,7 @@ header nav ul li a:hover {
     height: 70vh;
     background-image: url(images/bg.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right 70%;
     background-size: cover;
     border: 10px solid var(--yellow);
     border-radius: 15px;
@@ -257,7 +257,7 @@ td {
 }
 
 .field > .player {
-    width: 40px;
+    width: 35px;
     aspect-ratio: 1;
     position: absolute;
     cursor: pointer;
@@ -373,4 +373,6 @@ td {
     .card > h1 {
         font-size: 1.3rem;
     }
+
+
 }

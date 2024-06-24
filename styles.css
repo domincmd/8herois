@@ -294,6 +294,10 @@ td {
         
     }
 
+    .logo > h1{
+        font-size: 1.3rem;
+    }
+
     header > .container {
         margin: 5px;
         width: 100%;
@@ -303,6 +307,7 @@ td {
     header nav ul li a {
         width: 100%;
         text-align: center;
+        font-size: 0.9rem;
     }
 
     .big-container {
@@ -313,12 +318,28 @@ td {
 
     .big-container > .box,
     .big-container > .stats {
+        padding: 15px;
         display: block;
-        top: 30px;
+        top: 15px;
         width: 40%;
         height: fit-content;
         font-size: 0.9rem;
     }
+
+    .big-container > .box:hover,
+    .big-container > .stats:hover {
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+    }
+
+    .big-container > .stats {
+        left: 15px;
+    }
+
+    .big-container > .box {
+        right: 15px;
+    }
+
 
     table {
         max-width: none;
@@ -347,5 +368,9 @@ td {
         position: absolute;
         top: 130px;
         right: 50px;
+    }
+
+    .card > h1 {
+        font-size: 1.3rem;
     }
 }

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosso time | 8 Heróis</title>
+    <title>Nosso time - 8 Heróis</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
+            <div class="logo" onclick="window.location = '/'">
                 <img src="images/logo.png" alt="Logo 8 Heróis">
                 <h1>8 Heróis</h1>
             </div>
@@ -24,6 +24,7 @@
         </div>
         <div class="line"></div>
     </header>
+    <br>
     <div class="main-wrapper">
         <div class="field">
             <div class="player reserva1" style="bottom: 170px; left: calc(100% + 30px); background-color: gray;"></div>
@@ -46,7 +47,11 @@
             <p>Descrição do jogador...</p>
         </div>
     </div>
-    <div class="line"></div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 8 Heróis. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     <script src="team.js"></script>
 </body>
 </html>

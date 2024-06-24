@@ -61,6 +61,7 @@ header .logo {
     gap: 10px;
     user-select: none;
     cursor: pointer;
+    margin: 10px 0px;
 }
 
 header .logo > img {
@@ -88,6 +89,7 @@ header nav ul li a:hover {
     background-color: var(--yellowhover);
     text-decoration: underline;
 }
+
 
 .container {
     width: 80%;
@@ -201,6 +203,8 @@ footer {
     color: var(--yellow);
     text-align: center;
     padding: 1rem 0;
+    margin: 10px 0px;
+    border-top: 1px solid #333;
 }
 
 button.big-button {
@@ -293,6 +297,7 @@ td {
     header > .container {
         margin: 5px;
         width: 100%;
+        
     }
 
     header nav ul li a {
@@ -312,6 +317,7 @@ td {
         top: 30px;
         width: 40%;
         height: fit-content;
+        font-size: 0.9rem;
     }
 
     table {

@@ -3,10 +3,28 @@
     --yellowhover: rgb(255, 136, 0);
 }
 
+@font-face {
+    font-family: LemonMilk;
+    src: url(font/LEMONMILK-Bold.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+* h1 ,* h2, * h3 {
+    font-family: LemonMilk;
+}
+
+* p, * span {
+    font-family: Verdana;
 }
 
 body {
@@ -35,7 +53,7 @@ body {
     margin: 0;
 }
 
-.line {
+.header-line {
     background-color: #333;
     width: 100vw;
     height: 1px;
@@ -44,16 +62,18 @@ body {
 header {
     background-color: #000;
     color: var(--yellow);
+    max-height: 80px;
 }
 
-header .container {
+.header-container {
+    margin: 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-header .logo {
+.header-logo {
     display: flex;
     align-items: center;
     margin-right: 3rem;
@@ -64,7 +84,7 @@ header .logo {
     margin: 10px 0px;
 }
 
-header .logo > img {
+.header-logo > img {
     width: 60px;
     aspect-ratio: 1/1;
 }
@@ -90,14 +110,14 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-
-.container {
+.footer-container {
     width: 80%;
     margin: 0 auto;
     position: relative;
 }
 
-.big-container {
+.hero-container {
+    position: relative;
     height: 70vh;
     background-image: url(images/bg.png);
     background-repeat: no-repeat;
@@ -105,10 +125,11 @@ header nav ul li a:hover {
     background-size: cover;
     border: 10px solid var(--yellow);
     border-radius: 15px;
+    max-width: 90%;
 }
 
-.big-container > .box,
-.big-container > .stats {
+.hero-box,
+.hero-stats {
     position: absolute;
     width: 20%;
     background-color: #121212;
@@ -120,36 +141,36 @@ header nav ul li a:hover {
     font-size: 1.3rem;
 }
 
-.big-container > .box {
+.hero-box {
     top: 30px;
     right: 30px;
 }
 
-.big-container > .stats {
+.hero-stats {
     left: 30px;
     bottom: 30px;
 }
 
-.big-container > .box:hover,
-.big-container > .stats:hover {
+.hero-box:hover,
+.hero-stats:hover {
     width: calc(100% - 60px);
     height: calc(100% - 60px);
     z-index: 1000;
     opacity: 1;
 }
 
-.big-container > .imgbox:not(:hover) .hidden,
-.big-container > .stats:not(:hover) .hidden {
+.hero-box:not(:hover) .hidden-text,
+.hero-stats:not(:hover) .hidden-text {
     display: none;
 }
 
-.big-container > .imgbox:hover .to-hide,
-.big-container > .stats:hover .to-hide {
+.hero-box:hover .visible-text,
+.hero-stats:hover .visible-text {
     display: none;
 }
 
-.big-container > .imgbox:hover .hidden,
-.big-container > .stats:hover .hidden {
+.hero-box:hover .hidden-text,
+.hero-stats:hover .hidden-text {
     display: block;
 }
 
@@ -157,45 +178,78 @@ section {
     padding: 2rem 0;
 }
 
-.news {
+.news-section {
     background-color: #1c1c1c;
     padding: 1rem;
     border-radius: 5px;
 }
 
-.news > h1 {
+.news-section > h1 {
     text-align: center;
     padding: 15px;
 }
 
-.news-item {
+.news-article > img {
+    width: 60%;
+    border: 5px solid var(--yellowhover);
+    border-radius: 10px;
+}
+
+.news-article h4 {
+    margin-bottom: 0.5rem;
+}
+
+.news-article p {
+    margin: 0;
+}
+
+.news-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.news-article {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
     width: 25%;
     background-color: #333;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 5px;
     text-align: center;
+    transition: 0.3s ease;
 }
 
-.news-item > img {
-    width: 60%;
-    border: 5px solid var(--yellowhover);
-    border-radius: 10px;
+section.page-section {
+    width: 100vw;
+    height: 100vh;
+
 }
 
-.news-item h4 {
-    margin-bottom: 0.5rem;
+.page-div {
+    width: 100%;
+    height: 100%;
+    background: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
-.news-item p {
-    margin: 0;
-}
 
-.interactive-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+.page-div > .smaller-div {
+    background: #333;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    max-width: 30%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
 }
 
 footer {
@@ -231,22 +285,22 @@ td {
     max-width: 40%;
 }
 
-.stats > .flex {
+.hero-stats > .flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.main-wrapper {
+.team-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.field {
+.team-field {
     width: 100%;
-    max-width: 600px;
+    max-width: 450px;
     height: auto;
     background: url(images/field.svg);
     background-repeat: no-repeat;
@@ -256,7 +310,7 @@ td {
     aspect-ratio: 2/3;
 }
 
-.field > .player {
+.player {
     width: 35px;
     aspect-ratio: 1;
     position: absolute;
@@ -266,7 +320,7 @@ td {
     transition: 0.3s ease;
 }
 
-.field > .player:hover {
+.player:hover {
     border-color: white;
 }
 
@@ -278,6 +332,10 @@ td {
     border: 3px solid var(--yellow);
     background-color: #333;
     text-align: center;
+}
+
+.news-section {
+    max-width: 90%;
 }
 
 .card > img {
@@ -294,11 +352,11 @@ td {
         
     }
 
-    .logo > h1{
+    .header-logo > h1{
         font-size: 1.3rem;
     }
 
-    header > .container {
+    .header-container {
         margin: 5px;
         width: 100%;
         
@@ -310,14 +368,14 @@ td {
         font-size: 0.9rem;
     }
 
-    .big-container {
+    .hero-container {
         aspect-ratio: 9/16;
         border: 5px solid var(--yellow);
         border-radius: 10px;
     }
 
-    .big-container > .box,
-    .big-container > .stats {
+    .hero-box,
+    .hero-stats {
         padding: 15px;
         display: block;
         top: 15px;
@@ -326,53 +384,55 @@ td {
         font-size: 0.9rem;
     }
 
-    .big-container > .box:hover,
-    .big-container > .stats:hover {
+    .hero-box:hover,
+    .hero-stats:hover {
         width: calc(100% - 30px);
         height: calc(100% - 30px);
     }
 
-    .big-container > .stats {
+    .hero-stats {
         left: 15px;
     }
 
-    .big-container > .box {
+    .hero-box {
         right: 15px;
     }
-
 
     table {
         max-width: none;
     }
 
-    .news-item {
+    .news-article {
         width: 100%;
     }
 
-    .interactive-content {
+    .news-content {
         flex-direction: column;
     }
 
-    .field {
+    .page-div > .smaller-div {
+        max-width: 130%;
+    }
+
+    .team-field {
         width: 100%;
         max-width: 90%;
         height: auto;
     }
 
-    .main-wrapper {
+    .team-wrapper {
         flex-direction: column;
     }
 
     .card {
         width: 30%;
         position: absolute;
-        top: 130px;
+        top: calc(80px + 90vh + 130px);
         right: 50px;
     }
 
     .card > h1 {
         font-size: 1.3rem;
     }
-
 
 }

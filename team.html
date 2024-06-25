@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo" onclick="window.location = '/'">
+        <div class="header-container">
+            <div class="header-logo" onclick="window.location = '/'">
                 <img src="images/logo.png" alt="Logo 8 Heróis">
                 <h1>8 Heróis</h1>
             </div>
@@ -22,33 +22,45 @@
                 </ul>
             </nav>
         </div>
-        <div class="line"></div>
+        <div class="header-line"></div>
     </header>
-    <br>
-    <div class="main-wrapper">
-        <div class="field">
-            <div class="player reserva1" style="bottom: 170px; left: 3px; background-color: gray;"></div>
-            <div class="player reserva2" style="bottom: 130px; left: 3px; background-color: gray;"></div>
-            <div class="player reserva3" style="bottom: 90px; left: 3px; background-color: gray;"></div>
-            <div class="player goleiro" style="bottom: 0; left: 50%; transform: translateX(-50%); background-color: purple;"></div>
-            <div class="player zagueiro1" style="bottom: 90px; left: 70%; background-color: blue;"></div>
-            <div class="player zagueiro2" style="bottom: 90px; right: 70%; background-color: blue;"></div>
-            <div class="player meio1" style="bottom: 35%; left: 60%; background-color: yellow;"></div>
-            <div class="player meio2" style="bottom: 35%; right: 60%; background-color: yellow;"></div>
-            <div class="player ala1" style="bottom: 45%; left: 80%; background-color: orange;"></div>
-            <div class="player ala2" style="bottom: 45%; right: 80%; background-color: orange;"></div>
-            <div class="player atacante" style="bottom: 60%; left: 50%; transform: translateX(-50%); background-color: red;"></div>
+    <section class="page-section">
+        <div class="page-div">
+            <div class="smaller-div">
+                <h1>Nossa equipe</h1>
+                <br>
+                <p>Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet Lorem Ipsum Dolor sit amet </p>
+                <br>
+                <button class="big-button" onclick="window.location = '#field'">Veja Mais</button>
+            </div>
         </div>
+    </section>
+    <section id="field">
+        <div class="team-wrapper">
+            <div class="team-field">
+                <div class="player reserva1" style="bottom: 170px; left: 3px; background-color: gray;"></div>
+                <div class="player reserva2" style="bottom: 130px; left: 3px; background-color: gray;"></div>
+                <div class="player reserva3" style="bottom: 90px; left: 3px; background-color: gray;"></div>
+                <div class="player goleiro" style="bottom: 0; left: 50%; transform: translateX(-50%); background-color: purple;"></div>
+                <div class="player zagueiro1" style="bottom: 90px; left: 70%; background-color: blue;"></div>
+                <div class="player zagueiro2" style="bottom: 90px; right: 70%; background-color: blue;"></div>
+                <div class="player meio1" style="bottom: 35%; left: 60%; background-color: yellow;"></div>
+                <div class="player meio2" style="bottom: 35%; right: 60%; background-color: yellow;"></div>
+                <div class="player ala1" style="bottom: 45%; left: 80%; background-color: orange;"></div>
+                <div class="player ala2" style="bottom: 45%; right: 80%; background-color: orange;"></div>
+                <div class="player atacante" style="bottom: 60%; left: 50%; transform: translateX(-50%); background-color: red;"></div>
+            </div>
 
-        <div class="card">
-            <h1>Stefano</h1>
-            <h4>Goleiro</h4>
-            <img src="images/players/placeholder.jpg" alt="Stefano">
-            <p>Descrição do jogador...</p>
+            <div class="card">
+                <h1>Jogador</h1>
+                <h4>Posição</h4>
+                <img src="images/players/placeholder.jpg" alt="Stefano">
+                <p>Descrição do jogador...</p>
+            </div>
         </div>
-    </div>
+    </section>
     <footer>
-        <div class="container">
+        <div class="footer-container">
             <p>&copy; 2024 8 Heróis. Todos os direitos reservados.</p>
         </div>
     </footer>

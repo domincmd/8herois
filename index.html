@@ -10,8 +10,8 @@
 
     <img src="images/overlay.png" alt="" class="overlay">
     <header>
-        <div class="container">
-            <div class="logo" onclick="window.location = '/'">
+        <div class="header-container">
+            <div class="header-logo" onclick="window.location = '/'">
                 <img src="images/logo.png" alt="">
                 <h1>8 Heróis</h1>
             </div>
@@ -25,26 +25,26 @@
             </nav>
         </div>
         <br>
-        <div class="line"></div>
+        <div class="header-line"></div>
     </header>
     
     <section id="home">
-        <div class="container big-container">
-            <div class="box imgbox">
-                <h1 style="color: var(--yellowhover)">Bem-vindo ao 8 Heróis</h1>
-                <p class="to-hide">Site oficial do time de futebol 8 Heróis.</p>
-                <p class="hidden">Somos um time de futebol amador formado por jovens talentosos de 13 e 14 anos que acreditam no poder do esporte para unir pessoas e criar histórias inspiradoras. Aqui, cada jogador é mais que um atleta; é um verdadeiro herói, dentro e fora de campo.</p><br>
+        <center><div class="hero-container">
+            <div class="hero-box imgbox">
+                <h3 style="color: var(--yellowhover)">Bem-vindo!</h3>
+                <p class="visible-text">Site oficial do time de futebol amador 8 heróis.</p>
+                <p class="hidden-text">Somos um time de futebol amador formado por jovens talentosos de 13 e 14 anos que acreditam no poder do esporte para unir pessoas e criar histórias inspiradoras. Aqui, cada jogador é mais que um atleta; é um verdadeiro herói, dentro e fora de campo.</p><br>
                 <button class="big-button">Saiba Mais</button>
             </div>
-            <div class="stats imgbox">
-                <h1 style="color: var(--yellowhover)">Partidas</h1>
-                <p class="hidden">Confira aqui as estatísticas de nosso time.</p>
-                <p class="to-hide">Jogos: 2</p>
-                <p class="to-hide">Vitórias: 1</p>
-                <p class="to-hide">Derrotas: 1</p>
+            <div class="hero-stats imgbox">
+                <h3 style="color: var(--yellowhover)">Partidas</h3>
+                <p class="hidden-text">Confira aqui as estatísticas de nosso time.</p>
+                <p class="visible-text">Jogos: 2</p>
+                <p class="visible-text">Vitórias: 1</p>
+                <p class="visible-text">Derrotas: 1</p>
                 <br>
-                <div class="flex hidden">
-                    <table class="hidden">
+                <div class="flex hidden-text">
+                    <table class="hidden-text">
                         <tr>
                             <th>Dia</th>
                             <th>Oponente</th>
@@ -65,43 +65,46 @@
                    
                 </div>
             </div>
-        </div>
+        </div></center>
     </section>
 
 
     <section>
-    <div class="container news">
-        <h1>Notícias Recentes</h1>
-        <div class="interactive-content">
-            
-            <div class="news-item">
-                <h4>Derrota contra o 8 Astros</h4>
-                <br>
-                <img src="images/news1.png" alt="">
-                <br>
-                <br>
-                <p>Fim de jogo! Nossa partida contra o 8 Astros acaba em  1 X 3. Nosso único gol foi marcado pelo camisa 7 Benja.</p>
-
+        <center>
+            <div class="news-section">
+                <h1>Notícias Recentes</h1>
+                <div class="news-content">
+                    <div class="news-article" data-content="Fim de jogo! Nossa partida contra o 8 Astros acaba em  1 X 3. Nosso único gol foi marcado pelo camisa 7 Benja.">
+                        <h3>Derrota contra o 8 Astros</h3>
+                        <br>
+                        <img src="images/news1.png" alt="">
+                        <br>
+                        <br>
+                        <p>Fim de jogo! Nossa partida contra o 8 Astros acaba em  1 X 3. Nosso único gol foi marcado pelo camisa 7 Benja.</p>
+                    </div>
+                    <div class="news-article" data-content="Fim de jogo! Dessa vez o placar foi 7 X 7, decidido nos pênaltis (5-4). Tivemos 4 gols do Benja, 2 do Baracat e um gol contra.">
+                        <h3>Vitória contra o Jaca Fut</h3>
+                        <br>
+                        <img src="images/news2.png" alt="">
+                        <br>
+                        <br>
+                        <p class="news-article-summary">Fim de jogo! Dessa vez o placar foi 7 X 7, decidido nos pênaltis (5-4). Tivemos 4 gols do Benja, 2 do Baracat e um gol contra.</p>
+                    </div>
+                    <div class="news-article" data-content="Resumo da notícia 3.">
+                        <h3>Título da Notícia 3</h3>
+                        <br>
+                        <img src="images/news1.png" alt="">
+                        <br>
+                        <br>
+                        <p>Resumo da notícia 3.</p>
+                    </div>
+                </div>
             </div>
-            <div class="news-item">
-                <h4>Vitória contra o Jaca Fut</h4>
-                <br>
-                <img src="images/news2.png" alt="">
-                <br>
-                <br>
-                <p>Fim de jogo! Dessa vez o placar foi 7 X 7, decidido nos pênaltis (5-4). Tivemos 4 gols do Benja, 2 do Baracat e um gol contra.</p>
-            </div>
-            <div class="news-item">
-                <h4>Título da Notícia 3</h4>
-                <img src="images/news1.png" alt="">
-                <br>
-                <p>Resumo da notícia 3.</p>
-            </div>
-        </div>
-    </div>
+        </center>
     </section>
+    
     <footer>
-        <div class="container">
+        <div class="footer-container">
             <p>&copy; 2024 8 Heróis. Todos os direitos reservados.</p>
         </div>
     </footer>
